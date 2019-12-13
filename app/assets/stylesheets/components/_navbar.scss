@@ -1,24 +1,64 @@
 
 // A D M I N     N A V
 .admin-nav {
-  width: 300px;
-  padding: 80px 0px;
+  min-width: 350px;
+  padding: 0px 25px;
   // background-color: rgba(0,0,0,0.8);
-  color: rgba(0,0,0,0.8);
+  background-color: white;
+  color: rgba(0,0,0,0.4);
   height: 100vh;
-  -webkit-box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.55);
-  -moz-box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.55);
-  box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.38);
+  -moz-box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.38);
+  box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.38);
+  h1 {
+    margin: 20px 10px 40px;
+    text-align: center;
+  }
   ul {
     li {
-      padding: 10px 30px;
+      padding: 20px 30px;
       font-weight: 200;
       letter-spacing: 0.5px;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
+      left: 3px;
+      top: 3px;
+      background: linear-gradient(0deg, #fff, #f2f6f98f);
+      box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.48), -4px -2px 16px #FFFFFF;
+      border-radius: 16px;
+      margin: 20px 10px;
+      position: relative;
+      a {
+        color: rgba(0,0,0,0.4);
+      }
       i {
         margin-right: 15px;
+      }
+      .options {
+        display: none;
+        position: absolute;
+        left: 210px;
+        top: 10px;
+        i {
+          // background: -webkit-linear-gradient(bottom, #fff, #f2f6f98f);
+          // background: -o-linear-gradient(bottom, #fff, #f2f6f98f);
+          // background: linear-gradient(to top, #fff, #f2f6f98f);
+          background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#f2f6f98f));
+          background: linear-gradient(to top, #9eb3bc, #b0c6d68f);
+          box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.48), -4px -2px 16px #FFFFFF;
+          color: rgba(0,0,0,0.4);
+
+          // background-color: #0f536d;
+          // color: white;
+          padding: 12px;
+          border-radius: 150px;
+          font-size: 17px;
+          margin-right: 3px;
+        }
+        i:hover {
+          color: rgba(0,0,0,0.8);
+        }
       }
       .notification {
         background-color: rgb(255, 120, 91);
@@ -31,10 +71,18 @@
         font-weight: 600;
       }
     }
-    li:hover {
-      background-color: rgba(15, 83, 109, 0.8);
-      color: white;
-
+    li:hover, li.active {
+      // background: #edf0f34a;
+      background: #f8f9fb;
+      box-shadow: inset 3px 3px 7px rgba(192, 208, 222, 0.48), inset -3px -3px 7px #FFFFFF;      border-radius: 5px;
+      color: rgba(0,0,0,0.7);
+      border-radius: 16px;
+      div {
+        color: rgba(0,0,0,0.8);
+      }
+      .notification {
+        color: white;
+      }
     }
   }
 }
