@@ -1,0 +1,19 @@
+.admin-container {
+  width: 100%;
+  h1 {
+    margin: 20px 10px 40px;
+    text-align: center;
+    color: rgba(0,0,0,0.4);
+  }
+  .dashboard-content {
+    // height: 100%;
+    left: 3px;
+    top: 3px;
+    background: linear-gradient(0deg, #fff, #f2f6f98f);
+    box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.48), -4px -2px 16px #FFFFFF;
+    border-radius: 16px;
+    margin: 0px 50px 50px;
+
+  }
+
+}
