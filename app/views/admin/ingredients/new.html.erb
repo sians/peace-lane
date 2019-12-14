@@ -8,7 +8,7 @@
 
   <div class="dashboard-content">
 
-    <%= simple_form_for @ingredient, html: { class: 'admin-form' } do |f| %>
+    <%= simple_form_for([:admin, @ingredient], html: { class: 'admin-form ingredient-form' }) do |f| %>
       <div class="form-group">
         <%= f.input :name %>
       </div>
@@ -18,15 +18,28 @@
       </div>
 
       <div class="form-group pantry">
-        <%= f.input :pantry %>
-        <%= f.input :fresh %>
+        <%= f.input :pantry, as: :hidden %>
+        <div class="toggle">
+          <div class="button" id="pantry-toggle">
+            <div class="inner"></div>
+          </div>
+          <p>pantry</p>
+        </div>
+
+        <%= f.input :fresh, as: :hidden %>
+        <div class="toggle">
+          <div class="button" id="fresh-toggle">
+            <div></div>
+          </div>
+          <p>fresh</p>
+        </div>
       </div>
 
 
 
 
       <div class="form-group">
-        <%= f.input :thumb %>
+        <%= f.input :thumb, as: :hidden %>
         <%= f.input :thumb_cache, as: :hidden %>
       </div>
 
@@ -34,9 +47,9 @@
         <%= link_to "Cancel", admin_path, class: 'btn-cancel' %>
 
         <% if params[:action] == 'new' %>
-          <%= f.button :submit, "Create", class: '' %>
+          <%= f.button :submit, "Create", class: 'button-submit' %>
         <% else %>
-          <%= f.button :submit, "Edit", class: '' %>
+          <%= f.button :submit, "Edit", class: 'button-submit' %>
         <% end %>
       </div>
 

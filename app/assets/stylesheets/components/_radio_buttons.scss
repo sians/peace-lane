@@ -83,39 +83,48 @@
 // }
 $b-size: 30px;
 $i-size: $b-size / 2;
-
-.button, .button-two:hover {
-    position: relative;
-    margin-left: 100px;
-    height: $b-size;
-    width: $b-size;
-    background-image: linear-gradient(to top, #d8d9db8f 0%, #fff 80%, #FDFDFD 100%);
-    border-radius: 30px;
-    border: 1px solid #c8c8ca;
-    box-shadow:
-      0 4px 3px 1px #FCFCFC,
-      0 6px 8px #eaebed,
-      0 -3px 3px #e2e5eb,
-      0 -6px 4px #FEFEFE,
-      inset 0 0 3px 0 #CECFD1;
-    cursor: pointer;
-    .inner {
-      position: absolute;
-      height: $i-size;
-      width: $i-size;
-      top: ($i-size / 2) - 1;
-      left: ($i-size / 2) - 1 ;
-      background-image: linear-gradient(to top, #349538 0%, #4CAF50 80%, #4CAF50 100%);
+.toggle {
+  position: relative;
+  height: $b-size + 20px;
+  width: 200px;
+  .button, .button-two:hover {
+      position: relative;
+      // margin-left: 100px;
+      height: $b-size;
+      width: $b-size;
+      background-image: linear-gradient(to top, #d8d9db8f 0%, #fff 80%, #FDFDFD 100%);
       border-radius: 30px;
-      // border: 1px solid #c8c8ca;
-      // box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+      border: 1px solid #c8c8ca;
       box-shadow:
-        0 1px 1px 1px #FCFCFC,
-        0 2px 4px #D6D7D9,
-        0 -2px 2px #CECFD1,
-        0 -3px 2px #FEFEFE,
+        0 4px 3px 1px #FCFCFC,
+        0 6px 8px #eaebed,
+        0 -3px 3px #e2e5eb,
+        0 -6px 4px #FEFEFE,
         inset 0 0 3px 0 #CECFD1;
-    }
+      cursor: pointer;
+      .inner {
+        position: absolute;
+        height: $i-size;
+        width: $i-size;
+        top: ($i-size / 2) - 1;
+        left: ($i-size / 2) - 1 ;
+        background-image: linear-gradient(to top, #349538 0%, #4CAF50 80%, #4CAF50 100%);
+        border-radius: 30px;
+        // border: 1px solid #c8c8ca;
+        // box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 0 #CECFD1;
+        box-shadow:
+          0 1px 1px 1px #FCFCFC,
+          0 2px 4px #D6D7D9,
+          0 -2px 2px #CECFD1,
+          0 -3px 2px #FEFEFE,
+          inset 0 0 3px 0 #CECFD1;
+      }
+  }
+  p {
+  position: absolute;
+  left: 38px;
+  top: 3px;
+  }
 }
 
 .button-three {

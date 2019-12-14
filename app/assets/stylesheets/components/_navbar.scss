@@ -28,9 +28,7 @@
       border-radius: 30px;
       margin: 20px 10px;
       position: relative;
-      // box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2), 1px 1px 55px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 29px rgba(237, 237, 237, 1), inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 2px 2px 4px rgba(0,0,0,.15), inset -2px -2px 2px rgba(0,0,0,.15), -5px -5px 5px white;
-      // border: 1px solid #F4F4F4;
-      border: 1px solid #c8c8ca;
+      border: 1px solid transparent;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2), 5px 10px 35px rgba(0, 0, 0, 0.1), 8px 10px 25px rgba(0, 0, 0, 0.1), inset -1px -1px 9px rgba(237, 237, 237, 0), inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 1px 1px 8px white, -5px -5px 15px white;
 
       a {
@@ -51,19 +49,9 @@
           border-radius: 150px;
           font-size: 17px;
           margin-right: 5px;
-          // box-shadow:
-          //   2px 4px 6px rgba(0, 0, 0, 0.3),
-          //   1px 1px 55px rgba(0, 0, 0, 0.1),
-          //   8px 10px 25px rgba(0, 0, 0, 0.1),
-          //   inset -4px -4px 29px rgba(237, 237, 237, 1),
-          //   inset -1px -1px 15px rgba(255, 255, 255, 0.6),
-          //   inset 2px 2px 2px rgba(0,0,0,.15),
-          //   inset -2px -2px 2px rgba(0,0,0,.15)
-          //   // -5px -5px 5px white
-          //   ;
-          // border: 1px solid #c8c8ca;
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 1px 1px 55px rgba(0, 0, 0, 0.1), 8px 10px 25px rgba(0, 0, 0, 0.1), inset -4px -4px 29px #ededed, inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 2px 2px 2px rgba(255, 255, 255, 0.59), inset -2px -2px 2px rgba(255, 255, 255, 0.93);
-          border: 1px solid #c8c8ca;
+          // border: 1px solid #c8c8ca;
+          border: 1px solid transparent;
 
         }
 
@@ -82,16 +70,10 @@
         font-weight: 600;
         box-shadow:
           0px 0px 25px rgba(255, 120, 91, 0.3),
-          // inset 0px 0px 4px rgba(255,255,255,0.4),
           inset 0px 0px 4px rgba(0,0,0,0.5);
       }
     }
     li:hover, li.active {
-      // background: #edf0f34a;
-      // background: #f8f9fb;
-      // box-shadow: inset 3px 3px 7px rgba(192, 208, 222, 0.48), inset -3px -3px 7px #FFFFFF;      border-radius: 5px;
-      // color: rgba(0,0,0,0.7);
-      // border-radius: 16px;
       background: rgba(230,230,230,0.1);
       box-shadow:
         inset 1px 1px 5px rgba(0,0,0,0.4),
@@ -112,8 +94,6 @@
       }
       .notification {
         color: white;
-        // box-shadow:
-        //   inset 0px 0px 4px rgba(0,0,0,0.3);
       }
     }
   }
