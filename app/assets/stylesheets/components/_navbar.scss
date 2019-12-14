@@ -4,7 +4,7 @@
   min-width: 350px;
   padding: 0px 25px;
   // background-color: rgba(0,0,0,0.8);
-  background-color: white;
+  background-color: #f8f9fb;
   color: rgba(0,0,0,0.4);
   height: 100vh;
   -webkit-box-shadow: 10px 0px 33px -18px rgba(0,0,0,0.38);
@@ -25,10 +25,14 @@
       left: 3px;
       top: 3px;
       background: linear-gradient(0deg, #fff, #f2f6f98f);
-      box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.48), -4px -2px 16px #FFFFFF;
-      border-radius: 16px;
+      border-radius: 30px;
       margin: 20px 10px;
       position: relative;
+      // box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2), 1px 1px 55px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 29px rgba(237, 237, 237, 1), inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 2px 2px 4px rgba(0,0,0,.15), inset -2px -2px 2px rgba(0,0,0,.15), -5px -5px 5px white;
+      // border: 1px solid #F4F4F4;
+      border: 1px solid #c8c8ca;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2), 5px 10px 35px rgba(0, 0, 0, 0.1), 8px 10px 25px rgba(0, 0, 0, 0.1), inset -1px -1px 9px rgba(237, 237, 237, 0), inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 1px 1px 8px white, -5px -5px 15px white;
+
       a {
         color: rgba(0,0,0,0.4);
       }
@@ -38,24 +42,31 @@
       .options {
         display: none;
         position: absolute;
-        left: 210px;
-        top: 10px;
+        left: 200px;
+        top: 8px;
         i {
-          // background: -webkit-linear-gradient(bottom, #fff, #f2f6f98f);
-          // background: -o-linear-gradient(bottom, #fff, #f2f6f98f);
-          // background: linear-gradient(to top, #fff, #f2f6f98f);
-          background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#f2f6f98f));
-          background: linear-gradient(to top, #9eb3bc, #b0c6d68f);
-          box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.48), -4px -2px 16px #FFFFFF;
+          background-color: white;
           color: rgba(0,0,0,0.4);
-
-          // background-color: #0f536d;
-          // color: white;
           padding: 12px;
           border-radius: 150px;
           font-size: 17px;
-          margin-right: 3px;
+          margin-right: 5px;
+          // box-shadow:
+          //   2px 4px 6px rgba(0, 0, 0, 0.3),
+          //   1px 1px 55px rgba(0, 0, 0, 0.1),
+          //   8px 10px 25px rgba(0, 0, 0, 0.1),
+          //   inset -4px -4px 29px rgba(237, 237, 237, 1),
+          //   inset -1px -1px 15px rgba(255, 255, 255, 0.6),
+          //   inset 2px 2px 2px rgba(0,0,0,.15),
+          //   inset -2px -2px 2px rgba(0,0,0,.15)
+          //   // -5px -5px 5px white
+          //   ;
+          // border: 1px solid #c8c8ca;
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 1px 1px 55px rgba(0, 0, 0, 0.1), 8px 10px 25px rgba(0, 0, 0, 0.1), inset -4px -4px 29px #ededed, inset -1px -1px 15px rgba(255, 255, 255, 0.6), inset 2px 2px 2px rgba(255, 255, 255, 0.59), inset -2px -2px 2px rgba(255, 255, 255, 0.93);
+          border: 1px solid #c8c8ca;
+
         }
+
         i:hover {
           color: rgba(0,0,0,0.8);
         }
@@ -64,24 +75,45 @@
         background-color: rgb(255, 120, 91);
         color: white;
         border-radius: 150px;
-        width: 24px;
-        padding: 4px;
+        width: 31px;
+        padding: 8px;
         font-size: 10px;
         text-align: center;
         font-weight: 600;
+        box-shadow:
+          0px 0px 25px rgba(255, 120, 91, 0.3),
+          // inset 0px 0px 4px rgba(255,255,255,0.4),
+          inset 0px 0px 4px rgba(0,0,0,0.5);
       }
     }
     li:hover, li.active {
       // background: #edf0f34a;
-      background: #f8f9fb;
-      box-shadow: inset 3px 3px 7px rgba(192, 208, 222, 0.48), inset -3px -3px 7px #FFFFFF;      border-radius: 5px;
-      color: rgba(0,0,0,0.7);
-      border-radius: 16px;
+      // background: #f8f9fb;
+      // box-shadow: inset 3px 3px 7px rgba(192, 208, 222, 0.48), inset -3px -3px 7px #FFFFFF;      border-radius: 5px;
+      // color: rgba(0,0,0,0.7);
+      // border-radius: 16px;
+      background: rgba(230,230,230,0.1);
+      box-shadow:
+        inset 1px 1px 5px rgba(0,0,0,0.4),
+        inset -3px -3px 7px #FFFFFF;
+      border-radius: 30px;
+      color: rgba(0, 0, 0, 0.7);
+      background-image: linear-gradient(to top, #d8d9db8f 0%, #fff 80%, #FDFDFD 100%);
+      border-radius: 30px;
+      border: 1px solid #c8c8ca;
+      box-shadow:
+        0 4px 3px 1px #FCFCFC,
+        0 6px 8px #eaebed,
+        0 -3px 3px #e2e5eb,
+        0 -6px 4px #FEFEFE,
+        inset 0 0 3px 0 #CECFD1;
       div {
         color: rgba(0,0,0,0.8);
       }
       .notification {
         color: white;
+        // box-shadow:
+        //   inset 0px 0px 4px rgba(0,0,0,0.3);
       }
     }
   }
