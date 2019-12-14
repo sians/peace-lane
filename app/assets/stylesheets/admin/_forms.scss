@@ -7,6 +7,14 @@ form.admin-form {
   letter-spacing: 1px;
   font-size: 12px;
   color: rgba(0,0,0,0.4);
+  // border: 1px solid #c8c8ca;
+      box-shadow:
+        2px 4px 6px rgba(0, 0, 0, 0.2),
+        5px 10px 35px rgba(0, 0, 0, 0.1),
+        8px 10px 25px rgba(0, 0, 0, 0.1),
+        inset -1px -1px 9px rgba(237, 237, 237, 0),
+        inset -1px -1px 15px rgba(255, 255, 255, 0.6),
+        inset 1px 1px 8px white, -5px -5px 15px white;
 
   .form-group {
     input {
@@ -14,12 +22,23 @@ form.admin-form {
       border-radius: 16px;
       height: 45px;
       border: 1px solid #ced4da2e;
-    }
-    .pantry {
-      display: flex;
-      fieldset {
-        width: 45%;
-      }
+
+      // border: 1px solid #c8c8ca;
+      box-shadow:
+        2px 4px 6px rgba(0, 0, 0, 0.1),
+        5px 10px 35px rgba(0, 0, 0, 0.1),
+        8px 10px 25px rgba(0, 0, 0, 0.1),
+        inset -1px -1px 9px rgba(237, 237, 237, 0),
+        inset -1px -1px 15px rgba(255, 255, 255, 0.6),
+        inset 1px 1px 8px white, -5px -5px 15px white;
+
+      // border: 1px solid #c8c8ca;
+      // box-shadow:
+      //   0 4px 3px 1px #FCFCFC,
+      //   0 6px 8px #eaebed,
+      //   0 -3px 3px #e2e5eb,
+      //   0 -6px 4px #FEFEFE,
+      //   inset 0 0 3px 0 #CECFD1;
     }
     input[type=checkbox] {
       background-color: blue;
@@ -27,5 +46,16 @@ form.admin-form {
     .form-check-input{
       width: 25px;
     }
+  }
+  .form-group.pantry {
+    display: flex;
+    margin-top: 2rem;
+    fieldset {
+      width: 45%;
+    }
+  }
+  .form-submit {
+    display: flex;
+    justify-content: space-between;
   }
 }

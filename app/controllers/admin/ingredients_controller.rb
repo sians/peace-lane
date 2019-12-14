@@ -12,6 +12,12 @@ class Admin::IngredientsController < ApplicationController
   end
 
   def create
+    @ingredient = Ingredient.new(ingredient_params)
+    if @ingredient.save
+      redirect_to admin_ingredients_path
+    else
+      render 'admin/ingredients/new'
+    end
   end
 
   def edit
@@ -31,7 +37,7 @@ class Admin::IngredientsController < ApplicationController
   end
 
   def ingredient_params
-    params.require(:ingredient).permit(:name)
+    params.require(:ingredient).permit(:name, :description, :thumb, :thumb_cache, :pantry, :fresh)
   end
 
 end
