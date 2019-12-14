@@ -1,0 +1,48 @@
+
+<div class="admin-container">
+  <% if params[:action] == 'new' %>
+    <h1>Add An Ingredient</h1>
+  <% else %>
+    <h1>Edit Ingredient</h1>
+  <% end %>
+
+  <div class="dashboard-content">
+
+    <%= simple_form_for @ingredient, html: { class: 'admin-form' } do |f| %>
+      <div class="form-group">
+        <%= f.input :name %>
+      </div>
+
+      <div class="form-group">
+        <%= f.input :description %>
+      </div>
+
+      <div class="form-group pantry">
+        <%= f.input :pantry %>
+        <%= f.input :fresh %>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <%= f.input :thumb %>
+        <%= f.input :thumb_cache, as: :hidden %>
+      </div>
+
+      <div class="form-submit">
+        <%= link_to "Cancel", admin_path, class: 'btn-cancel' %>
+
+        <% if params[:action] == 'new' %>
+          <%= f.button :submit, "Create", class: '' %>
+        <% else %>
+          <%= f.button :submit, "Edit", class: '' %>
+        <% end %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+

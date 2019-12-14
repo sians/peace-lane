@@ -1,0 +1,31 @@
+form.admin-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  font-family: $headers-font;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.4);
+
+  .form-group {
+    input {
+      box-shadow: 4px 2px 16px rgba(153, 171, 188, 0.24), -4px -2px 16px #FFFFFF;
+      border-radius: 16px;
+      height: 45px;
+      border: 1px solid #ced4da2e;
+    }
+    .pantry {
+      display: flex;
+      fieldset {
+        width: 45%;
+      }
+    }
+    input[type=checkbox] {
+      background-color: blue;
+    }
+    .form-check-input{
+      width: 25px;
+    }
+  }
+}
