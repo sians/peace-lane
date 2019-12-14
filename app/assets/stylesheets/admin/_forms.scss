@@ -48,6 +48,7 @@ form.admin-form {
     }
   }
   .form-group.pantry {
+    position: relative;
     display: flex;
     margin-top: 2rem;
     fieldset {
@@ -58,4 +59,18 @@ form.admin-form {
     display: flex;
     justify-content: space-between;
   }
+
+
+  .ingredient_pantry.hidden, .ingredient_fresh.hidden {
+    position: absolute;
+    top: 20px;
+    left: 39px;
+  }
+
+  .ingredient_fresh.hidden {
+    left: 238px;
+  }
+
+
+
 }

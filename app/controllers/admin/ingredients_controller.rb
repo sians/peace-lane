@@ -12,6 +12,7 @@ class Admin::IngredientsController < ApplicationController
   end
 
   def create
+
     @ingredient = Ingredient.new(ingredient_params)
     if @ingredient.save
       redirect_to admin_ingredients_path

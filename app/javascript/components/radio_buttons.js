@@ -3,6 +3,7 @@ const ingredientForm = document.querySelector('.ingredient-form')
 const radioButtonToggle = () => {
   if (ingredientForm) {
     document.querySelector("#ingredient_pantry").value = true;
+    document.querySelector("#ingredient_fresh").value = false;
     const buttons = document.querySelectorAll('.toggle .button');
     buttons.forEach(button => {
       button.addEventListener("click", event => {
